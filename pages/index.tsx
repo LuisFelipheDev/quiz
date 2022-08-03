@@ -5,8 +5,7 @@ import RespostaModel from "../model/resposta";
 import { useRouter } from "../node_modules/next/router";
 import styles from '../styles/Home.module.css'
 
-  const BASE_URL = 'http://localhost:3000/api'
-
+  const BASE_URL = process.env.NEXT_PUBLIC_URL_API
 export default function Home() {
 
   const router = useRouter()
